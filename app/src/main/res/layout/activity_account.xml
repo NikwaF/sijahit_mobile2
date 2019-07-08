@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/gradient_background">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/profile"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#E5DBCE"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Nama: "
+                    android:textColor="#2F4858" />
+
+                <TextView
+                    android:id="@+id/nama_akun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="#2F4858" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Email: "
+                    android:textColor="#2F4858" />
+
+                <TextView
+                    android:id="@+id/emailakun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text="nikonabilah@gmail.com"
+                    android:textAlignment="textEnd"
+                    android:textColor="#2F4858" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="No hp: "
+                    android:textColor="#2F4858" />
+
+                <TextView
+                    android:id="@+id/nohp_akun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="5dp"
+                    android:text="0892122122"
+                    android:textAlignment="textEnd"
+                    android:textColor="#2F4858" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#E5DBCE"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:contentPaddingTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/edit_profil_btn"
+                android:textIsSelectable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/et_register"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:outlineAmbientShadowColor="#2F4858"
+                android:padding="10dp"
+                android:text="Edit Profil akun"
+                android:textColor="#2F4858"
+                android:textColorHint="#2F4858" />
+
+            <TextView
+                android:id="@+id/nama_csusssdtomer"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textIsSelectable="false"
+
+                android:background="@drawable/et_register"
+                android:inputType="text"
+                android:outlineAmbientShadowColor="#2F4858"
+                android:padding="10dp"
+                android:text="Alamat"
+                android:textColor="#2F4858"
+                android:textColorHint="#2F4858" />
+
+            <TextView
+                android:id="@+id/nama_csustomer"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="false"
+
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/et_register"
+                android:inputType="text"
+                android:outlineAmbientShadowColor="#2F4858"
+                android:padding="10dp"
+                android:text="History Transaksi"
+                android:textColor="#2F4858"
+                android:textColorHint="#2F4858" />
+
+            <Button
+                android:id="@+id/logout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_curved_dark"
+                android:elevation="3dp"
+                android:padding="15dp"
+                android:text="logout" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
