@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfileUkuranActivity"></activity>
+        <activity android:name=".Profile_ukuran_detail"></activity>
+        <activity android:name=".Input_profile_ukuranActivity" />
+        <activity android:name=".ProfileUkuranActivity" />
         <activity android:name=".EditProfilAkunActivity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".HomeActivity" />

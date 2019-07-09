@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent" android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="90dp"
+        tools:context=".RegisterActivity"
+        android:background="@drawable/gradient_background">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/monseratregular"
+            android:text="alamat"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="#E5DBCE"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_goneMarginBottom="20dp"
+            app:contentPaddingTop="25dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Baju :"
+                    android:textColor="#2F4858"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Panjang Dada:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/panjang_dada"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Lingkar Dada:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/lingkar_dada"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Lebar Dada:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/lebar_dada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:outlineAmbientShadowColor="#2F4858"
+                        android:padding="10dp"
+                        android:textAlignment="textEnd"
+                        android:textColor="#2F4858"
+                        android:textColorHint="#2F4858" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Lingkar Lengan:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/lingkar_lengan"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Panjang Lengan:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/panjang_lengan"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Lingkar Pinggul:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/lingkar_pinggul"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Panjang Bahu:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/panjang_bahu"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Panjang Punggung:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/panjang_punggung"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Celana :"
+                    android:textColor="#2F4858"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Lingkar Pinggang:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/lingkar_pinggang"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Panjang Celana:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/panjang_celana"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Lingkar Celana:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:textAlignment="textStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Lingkar Celana:"
+                            android:textColor="#2F4858"
+                            android:padding="10dp"
+                            android:textColorHint="#2F4858"
+                            android:outlineAmbientShadowColor="#2F4858"/>
+
+                        <TextView
+                            android:id="@+id/lingkar_celana"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:textAlignment="textEnd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="#2F4858"
+                            android:padding="10dp"
+                            android:textColorHint="#2F4858"
+                            android:outlineAmbientShadowColor="#2F4858"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:textAlignment="textStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Lingkar Paha:"
+                            android:textColor="#2F4858"
+                            android:padding="10dp"
+                            android:textColorHint="#2F4858"
+                            android:outlineAmbientShadowColor="#2F4858"/>
+
+                        <TextView
+                            android:id="@+id/lingkar_paha"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:textAlignment="textEnd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="#2F4858"
+                            android:padding="10dp"
+                            android:textColorHint="#2F4858"
+                            android:outlineAmbientShadowColor="#2F4858"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis kelamin :"
+                    android:textColor="#2F4858"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Jenis Kelamin:"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+
+                    <TextView
+                        android:id="@+id/jenis_kelamin"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#2F4858"
+                        android:padding="10dp"
+                        android:textColorHint="#2F4858"
+                        android:outlineAmbientShadowColor="#2F4858"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/info_ukuran_btn"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:padding="15dp"
+                        android:elevation="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_curved_dark"
+                        android:text="Info Ukuran"/>
+
+                    <Button
+                        android:id="@+id/registrasi_btn"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:padding="15dp"
+                        android:elevation="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_curved_dark"
+                        android:text="Registrasi"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

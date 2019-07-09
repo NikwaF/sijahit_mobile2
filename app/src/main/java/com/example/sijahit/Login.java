@@ -35,7 +35,7 @@ public class Login extends AppCompatActivity {
     private EditText email,password;
     private Button login_btn;
     private ProgressDialog progressDialog;
-    private final String  url_login = "http://192.168.1.2/sijahit/api/login_customer";
+    private final String  url_login = "http://sijahit.webtif.com/api/login_customer";
     private Login_session_model login_session_model;
 
 

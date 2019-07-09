@@ -33,7 +33,7 @@ import maes.tech.intentanim.CustomIntent;
 public class AlamatActivity extends AppCompatActivity {
     private EditText kelurahan,kecamatan,kodepos,detail_alamat;
     private Button registrasi_button;
-    private final String  url_regist = "http://192.168.1.2/sijahit/api/register_customer";
+    private final String  url_regist = "http://sijahit.webtif.com/api/register_customer";
     private ProgressDialog progressDialog;
 
     @Override

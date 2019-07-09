@@ -34,7 +34,7 @@ public class EditProfilAkunActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
 
     private EditText nama,email,nohp;
-    private String url_load_data = "http://192.168.1.2/sijahit/api/customer";
+    private String url_load_data = "http://sijahit.webtif.com/api/customer";
     Login_session_model login_session_model;
     private Button update_btn;
 
